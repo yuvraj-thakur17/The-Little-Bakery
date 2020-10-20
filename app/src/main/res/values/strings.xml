@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Little Bakery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="product_description_note">NOTE: The icing, design of the cake may vary from the image depending upon local availability. Please allow us minimum 4 hours before delivery time. We accept order till 8PM. For any other enquiry please contact with us on +91 8839053893 or email us at thelittlebakery1612@gmail.com</string>
+</resources>

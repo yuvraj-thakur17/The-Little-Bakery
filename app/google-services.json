@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "512474618047",
+    "firebase_url": "https://little-bakery.firebaseio.com",
+    "project_id": "little-bakery",
+    "storage_bucket": "little-bakery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512474618047:android:54ff57ca817bd30a588e0a",
+        "android_client_info": {
+          "package_name": "com.example.littlebakery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512474618047-ktk04eul8jifld44c1ia55209orc6phs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAli4tyBaH9lyPfd5tEnYa0ssOPFLkcL04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512474618047-ktk04eul8jifld44c1ia55209orc6phs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
