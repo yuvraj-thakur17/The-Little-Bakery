@@ -3,6 +3,8 @@ package com.example.littlebakery;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +19,9 @@ public class NewHomeFragment extends Fragment {
     public NewHomeFragment(){
     }
 
-    private GridView gridView;
+//    private GridView gridView;
+    private RecyclerView rlProducts;
+    private GridProductLayoutAdapter gridProductLayoutAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,7 +29,8 @@ public class NewHomeFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_new_home, container, false);
-        gridView = view.findViewById(R.id.home_gridView);
+        rlProducts = view.findViewById(R.id.rl_products);
+//        gridView = view.findViewById(R.id.home_gridView);
 
         List<Horizontal_Product_Scroll_Model> horizontal_product_scroll_modelList = new ArrayList<>();
         horizontal_product_scroll_modelList.add(new Horizontal_Product_Scroll_Model(R.drawable.cake20,"Chocolate Cake","Rs.550/-","Rs.700/-"));
@@ -45,9 +50,14 @@ public class NewHomeFragment extends Fragment {
         horizontal_product_scroll_modelList.add(new Horizontal_Product_Scroll_Model(R.drawable.cake7,"Choco Chip Cake","Rs.550/-","Rs.600/-"));
         horizontal_product_scroll_modelList.add(new Horizontal_Product_Scroll_Model(R.drawable.cake10,"Red Velvet Cake","Rs.550/-","Rs.600/-"));
 
+        gridProductLayoutAdapter = new GridProductLayoutAdapter(getContext());
+        rlProducts.setLayoutManager(new GridLayoutManager(getContext(), 2));
+        rlProducts.setAdapter(gridProductLayoutAdapter);
+        gridProductLayoutAdapter.setHorizontalProductScrollModelList(horizontal_product_scroll_modelList);
+        gridProductLayoutAdapter.notifyDataSetChanged();
 
-        Grid_Product_Layout_Adapter grid_product_layout_adapter = new Grid_Product_Layout_Adapter(horizontal_product_scroll_modelList);
-        gridView.setAdapter(grid_product_layout_adapter);
+//        Grid_Product_Layout_Adapter grid_product_layout_adapter = new Grid_Product_Layout_Adapter(horizontal_product_scroll_modelList);
+//        gridView.setAdapter(grid_product_layout_adapter);
 
         return view;
     }

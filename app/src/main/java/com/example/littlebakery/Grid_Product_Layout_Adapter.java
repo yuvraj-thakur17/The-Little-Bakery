@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -70,6 +71,7 @@ public class Grid_Product_Layout_Adapter extends BaseAdapter {
         private TextView productTitle;
         private TextView productPrice;
         private TextView cuttedPrice;
+        private ConstraintLayout clProduct;
 
         public ViewHolder(final View itemView) {
             super(itemView);
@@ -77,6 +79,7 @@ public class Grid_Product_Layout_Adapter extends BaseAdapter {
             productTitle = itemView.findViewById(R.id.product_title_grid);
             productPrice = itemView.findViewById(R.id.product_price_grid);
             cuttedPrice = itemView.findViewById(R.id.cutted_price_grid);
+            clProduct = itemView.findViewById(R.id.cl_product);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
